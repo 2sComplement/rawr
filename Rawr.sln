@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Rawr", "src\Rawr\Rawr.fsproj", "{592AD03C-295C-4AB1-885D-19CBA909C18C}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Rawr.Tests", "src\Rawr.Tests\Rawr.Tests.fsproj", "{772685BD-71F4-4ED1-A583-81D2300C1373}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{592AD03C-295C-4AB1-885D-19CBA909C18C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{592AD03C-295C-4AB1-885D-19CBA909C18C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{592AD03C-295C-4AB1-885D-19CBA909C18C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{592AD03C-295C-4AB1-885D-19CBA909C18C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{772685BD-71F4-4ED1-A583-81D2300C1373}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{772685BD-71F4-4ED1-A583-81D2300C1373}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{772685BD-71F4-4ED1-A583-81D2300C1373}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{772685BD-71F4-4ED1-A583-81D2300C1373}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
