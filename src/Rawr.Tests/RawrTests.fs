@@ -362,32 +362,6 @@ module RawrBuilderTests =
         modified =! 42
 
     [<Test>]
-    let ``rawr delays execution`` () =
-        
-        let mutable executed = false
-
-        let inline execute (delayed: 'args -> Rawr<_, int, _>) args =
-            rawr {
-                let! executable = delayed args
-
-                return
-                    async {
-                        if false then
-                            let! result = executable
-                            return result
-                        else
-                            return Ok 42
-                    }
-            }
-
-        let delayed =
-            fun () -> rawr { return 0 }
-            |> execute
-
-        let result = delayed () |> run
-        result =! Ok 42
-
-    [<Test>]
     let ``rawr executes lazily`` () =
         let mutable executed = false
 

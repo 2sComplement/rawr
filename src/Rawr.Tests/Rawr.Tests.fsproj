@@ -20,12 +20,7 @@
     <PackageReference Include="coverlet.collector" Version="3.1.2" />
     <PackageReference Include="Unquote" Version="6.1.0" />
   </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="FSharpx.Extras" Version="3.1.0" />
-    <PackageReference Include="FsToolkit.ErrorHandling" Version="4.9.0" />
-  </ItemGroup>
-
+  
   <ItemGroup>
     <ProjectReference Include="..\Rawr\Rawr.fsproj" />
   </ItemGroup>
