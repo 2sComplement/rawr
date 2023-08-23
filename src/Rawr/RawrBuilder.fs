@@ -31,12 +31,7 @@ type RawrBuilder() =
             r: Rawr<'env, 'a, 'err>,
             [<InlineIfLambda>] binder: 'a -> Rawr<'env, 'b, 'err>
         ) : Rawr<'env, 'b, 'err> =
-        fun env ->
-            async {
-                match! r env with
-                | Ok r -> return! binder r env
-                | Error e -> return Error e
-            }
+        Rawr.bind binder r
 
     // Binds an async
     member inline this.Bind
